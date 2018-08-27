@@ -4,7 +4,8 @@ CMAP is a compact, generative framework for participant behavior representation 
 
 This model was proposed in the following paper:
 
-Adit Krishnan, Ashish Sharma and Hari Sundaram, "Learning Fine-grained Latent Representations of Online User Behavior in the Presence of Skew and Sparsity", 27th ACM International Conference on Information and Knowledge Management (CIKM'18)
+> Adit Krishnan, Ashish Sharma and Hari Sundaram, "Learning Fine-grained Latent Representations of Online User Behavior in the Presence of Skew and Sparsity", 
+> 27th ACM International Conference on Information and Knowledge Management (CIKM'18)
 
 ## Getting Started
 
