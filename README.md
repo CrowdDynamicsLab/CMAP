@@ -1,12 +1,10 @@
 # CRP-based Multifacet Activity Profiling Model (CMAP)
 
-CMAP is a compact, generative framework for participant behavior representation on social learning platforms. It jointly models the temporal evolution of content, behavior and inter-participant links in a unified latent framework, integrated with the Chinese Restaurant Process (Pitman-Yor) to effectively deal with behavior skew and data sparsity. 
+CMAP is a compact, generative framework for learning participant behavior representations on social media platforms. It jointly models the temporal evolution of content, behavior and inter-participant links in a unified latent framework, integrated with the Chinese Restaurant Process (Pitman-Yor) to effectively deal with behavior skew and data sparsity. 
 
-This model was proposed in the following paper:
+If this code is helpful in your research, please cite the following publication
 
-> Adit Krishnan, Ashish Sharma and Hari Sundaram, "Learning Fine-grained Latent Representations of Online User Behavior in the Presence of Skew and Sparsity", 
-> 27th ACM International Conference on Information and Knowledge Management (CIKM'18)
-
+> Krishnan, Adit, Ashish Sharma, and Hari Sundaram. "Insights from the Long-Tail: Learning Latent Representations of Online User Behavior in the Presence of Skew and Sparsity." Proceedings of the 27th ACM International Conference on Information and Knowledge Management. ACM, 2018.
 ## Getting Started
 
 These instructions will get you a copy of the model up and running on your local machine.
@@ -33,12 +31,12 @@ $ make
 
 This repository supports the following variations of CMAP:
 
-- **Unified** - Modelling words and actions jointly using same set of topics.
-- **Factored** - Modelling words and actions using different set of topics.
+- **Unified** - Modelling words and actions jointly using the same set of topics.
+- **Factored** - Modelling words and actions using different sets of topics.
 
-Both Unified and Factored model have a hierarchical counterparts where we introduce hierarchy over set of topics. In total, the repository supports 4 different variations of CMAP. All the 4 variations can either be run with parallelization (using threads, if multiple cores are available) or without parallelization (normal linear execution of code). 
+Both the Unified and Factored models have a hierarchical counterparts where we introduce a hierarchy over set of topics. In total, the repository supports 4 different variations of CMAP. All the 4 variations can either be run with parallelization (using threads, if multiple cores are available) or without parallelization (linear execution of code). 
 
-Please refer the paper for details. 
+Please refer the paper for more details. 
 
 ## Input File Format
 
@@ -51,7 +49,7 @@ For a paricular dataset, the model requires 2 input files:
     - **Timestamp**: The normalized value of time of data point. The value must be between 0.01 to 0.99 and should be truncated to 2 decimal places. 
 - **<dataset>_links.txt**: This file is optional and can be provided if you have social interaction information as part of your dataset. Each row corresponds to a link from a data point i to data point j and has 2 colums - i and j (tab-separated). The data points are zero-indexed and indexing is defined from the <dataset>_pre_processed file.
 
-Both the files should be put inside the **Data** folder.
+Both the files should be placed inside the **Data** folder.
 
 ## Running the Model
 
@@ -78,7 +76,7 @@ where possible options include:
 --help:                   Print help
 ```
 
-Providing dataset name is mandatory. Please refer to the paper for optimal values of these parameters.
+Providing the dataset name is mandatory. Please refer to the paper for optimal values of these parameters.
 
 ## Sample Run
 A sample dataset named biology is present in the Data folder. For running the hierarchical variation of the unified model with G = 20 and K = 10 for 100 iterations, execute the following command:
