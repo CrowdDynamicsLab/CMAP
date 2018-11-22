@@ -7,11 +7,11 @@ If this code is helpful in your research, please cite the following publication
 > Krishnan, Adit, Ashish Sharma, and Hari Sundaram. "Insights from the Long-Tail: Learning Latent Representations of Online User Behavior in the Presence of Skew and Sparsity." Proceedings of the 27th ACM International Conference on Information and Knowledge Management. ACM, 2018.
 ## Getting Started
 
-These instructions will get you a copy of the model up and running on your local machine.
+These instructions will help you get the model up and running on your system.
 
 ### Platforms Supported
 
-- Unix-Like
+- Unix, MacOS, Windows (with appropriate compilers/environment)
 
 ### Prerequisites
 
